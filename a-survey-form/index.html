@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+          Please fill out this futuristic survey form to help us improve.
+        </p>
+      </header>
+
+      <form id="survey-form">
+        <!-- Name Field -->
+        <div class="form-group">
+          <label id="name-label" for="name">Your Name:</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+
+        <!-- Email Field -->
+        <div class="form-group">
+          <label id="email-label" for="email">Your Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <!-- Age Field -->
+        <div class="form-group">
+          <label id="number-label" for="number">Your Age:</label>
+          <input
+            type="number"
+            id="number"
+            placeholder="Enter your age"
+            min="18"
+            max="99"
+            required
+          />
+        </div>
+
+        <!-- Dropdown -->
+        <div class="form-group">
+          <label for="dropdown">Choose a country:</label>
+          <select id="dropdown" required>
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+            <option value="germany">Germany</option>
+            <option value="france">France</option>
+            <option value="japan">Japan</option>
+            <option value="china">China</option>
+          </select>
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group">
+          <p>Gender:</p>
+          <label
+            ><input type="radio" name="gender" value="male" required />
+            Male</label
+          >
+          <label
+            ><input type="radio" name="gender" value="female" required />
+            Female</label
+          >
+          <label
+            ><input type="radio" name="gender" value="non-binary" required />
+            Non-binary</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="gender"
+              value="prefer-not-to-say"
+              required
+            />
+            Prefer not to say</label
+          >
+        </div>
+
+        <!-- Interests -->
+        <div class="form-group">
+          <p>Select your interests:</p>
+          <label><input type="checkbox" value="sports" /> Sports</label>
+          <label><input type="checkbox" value="music" /> Music</label>
+          <label><input type="checkbox" value="travel" /> Travel</label>
+          <label><input type="checkbox" value="reading" /> Reading</label>
+          <label><input type="checkbox" value="gaming" /> Gaming</label>
+          <label><input type="checkbox" value="cooking" /> Cooking</label>
+          <label><input type="checkbox" value="art" /> Art</label>
+          <label><input type="checkbox" value="technology" /> Technology</label>
+        </div>
+
+        <!-- Additional Comments -->
+        <div class="form-group">
+          <label for="comments">Additional Comments:</label>
+          <textarea
+            id="comments"
+            placeholder="Your comments here..."
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
